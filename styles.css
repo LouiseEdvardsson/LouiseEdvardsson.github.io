@@ -150,6 +150,7 @@ img {
   display: block;
   position: relative;
 }
+
 .picture-right:hover .overlay-text {
   display: flex;
   justify-content: center;
@@ -289,7 +290,7 @@ margin-right: 9px;
 
 
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1000px) {
 
   h1{
     margin-left: 45px;
