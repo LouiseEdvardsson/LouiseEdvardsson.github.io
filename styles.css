@@ -5,10 +5,11 @@ src: url("./fonts/circularstd-bold.otf");
 
 h1 {
   color: #292b2d;
-  font-family: "MyFirstFont", Helvetica, Sans serif;
-  font-size: 8vw;
-  margin-top: 150px;
+  font-family: Helvetica, Sans serif;
+  font-size: 5vw;
+  margin-top: 200px;
   margin-left: 20px;
+  font-weight: 400;
   line-height: 1em;
 }
 
@@ -16,9 +17,10 @@ h2 {
   color: #292b2d;
   font-family: "helvetica", arial, Sans-serif;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 0.3em;
 }
+
 h3 {
   color: #ffffff;
   font-family: "helvetica", arial, Sans-serif;
@@ -26,13 +28,16 @@ h3 {
   font-weight: bold;
   line-height: 0.3em;
 }
+
   p {
-    font-size: 20px;
+    font-size: 16px;
     Font-family: "Helvetica", arial, sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 1.3em;
+    margin-left: 0px;
     padding-top: 5px;
 }
+
 
 .quote {
   font-size: 40px;
@@ -47,7 +52,7 @@ img {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -62,19 +67,10 @@ img {
   margin-top: 20px;
 }
 .hero{
-background-image: url(./images/img_1175sv.jpg);
-background-size: cover;
-height: 1000px;
-width: 100%
-}
-
-.outermeny {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  padding top:20px;
-
+  background-image: url(./images/img_1175sv.jpg);
+  background-size: cover;
+  height: 1000px;
+  width: 100%
 }
 
 .project-side {
@@ -87,10 +83,19 @@ width: 100%
   margin-top: 50px;
 }
 
+.paralax {
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .box-text {
-  width: 350px;
+  max-width: 450px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 50px;
 }
 
 .box-images {
@@ -99,28 +104,21 @@ width: 100%
   justify-content: center;
   align-content: space-between;
   width: 100%;
+  margin-top: 50px;
+  margin-right: 50px;
 
 }
 
 .project-picture {
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+
 }
 
 .logo{
-  width: 40px;
+  width: 80px;
   margin: 10px;
 }
 
-.meny-links {
-  padding: 15px;
-  text-decoration: none;
-  color: #000000;
-  font-family: "helvetica", arial, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .onethird {
     margin-left: 33%;
@@ -136,6 +134,7 @@ width: 100%
   align-content: space-between;
   width: 100%;
   margin-bottom: 5px;
+
 }
 
 .headbox {
@@ -223,17 +222,35 @@ width: 100%
   background-color: rgba(255,0,0,0.7);
 }
 
+.menylinks {
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "helvetica", arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: #000000;
     font-family: "helvetica", arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 a:hover, a:active {
   color: #e03c2a;
   font-weight: bold;
+}
+
+.menylinks {
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "helvetica", arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 }
@@ -242,50 +259,81 @@ a:hover, a:active {
 }
 
 .heading-container {
-position: absolute;
+display: flex;
 top: 150px;
-margin-left: 20px;
+margin-left: 0px;
+position: fixed;
 
+}
 
+.outermeny {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color:
+}
+
+.innermeny {
+margin-right: 9px;
+}
+
+.logomeny{
+  margin-left: 10px;
 }
 
 
 
+
 @media only screen and (min-width: 760px) {
+
+  h1{
+    margin-left: 45px;
+  }
+
+  .paralax {
+        background-attachment: scroll;
+        height: 500px;
+    }
+
   .main-cointainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .picture-left {
     max-width: 31.7%;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-right: 5px;
   }
   .picture-center {
     max-width: 31.7%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .picture-right {
     max-width: 31.7%;
-    margin-left: 5px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
   }
   .a-picture-left {
-    max-width: 48%;
-    margin-left: 20px;
-    margin-right: 5px;
+    max-width: 50%;
+    margin-left: 50px;
+    margin-right: 10px;
     display: block;
   }
   .a-picture-right {
-    max-width: 48%;
-    margin-left: 5px;
-    margin-right: 20px;
+    max-width: 50%;
+    margin-left: 10px;
+    margin-right: 50px;
   }
 
   .project-side {
@@ -304,5 +352,26 @@ margin-left: 20px;
     width: 80%;
     margin-left: 20px;
   }
+
+.logo {
+  width: 50px;
+  margin: 0px;
+}
+
+  .innermeny {
+  margin-right: 40px;
+  }
+
+  .logomeny{
+    margin-left: 50px;
+  }
+
+  .box-text {
+    width: 450px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+
 
 }
