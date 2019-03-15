@@ -1,15 +1,14 @@
 @font-face {
 font-family: "MyFirstFont";
-src: url("./fonts/circularstd-bold.otf");
+src: url("./fonts/LabGrotesque-Bold.otf");
 }
 
 h1 {
   color: #292b2d;
-  font-family: Helvetica, Sans serif;
+  font-family: "MyFirstFont", Helvetica, Sans serif;
   font-size: 5vw;
   margin-top: 200px;
   margin-left: 20px;
-  font-weight: 400;
   line-height: 1em;
 }
 
